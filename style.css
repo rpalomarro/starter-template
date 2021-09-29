@@ -1,230 +1,262 @@
  /* Typography imported from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap');
 
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+ html {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+ }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-
-/* Styling Variables */
-:root {
-  --accent-color: #555;
-  --body-typeface: "Inter", sans-serif;
-  --main-heading: "Inter", sans-serif;
-  --gradient: linear-gradient(45deg, #F17C58, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
-}
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
 
 
-body {
-  font-family: var(--body-typeface);
-  color: black;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+ /* Styling Variables */
+ :root {
+   --accent-color: #555;
+   --body-typeface: "Inter", sans-serif;
+   --main-heading: "Inter", sans-serif;
+ }
 
 
-
-/* Making all images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* Typography */
-
-h1 {
-  font-size: 4em;
-  font-family: var(--main-heading);
-  margin-bottom: .2em;
-  color: #6da0cb;
-}
-
-h2 {
-  font-size: 1em;
-  font-family: var(--main-heading);
-  margin-bottom: .2em;
-  color: #cccccc;
-}
-
-h3 {
-  font-size: 1em;
-  font-family: var(--main-heading);
-  margin-bottom: .2em;
-  color: #000000;
-}
-
-.hero-headline {
-  color: white;
-}
-
-/* Hyperlink Styles */
-a {
-  text-decoration: none;
-  color: #84bdee;
-
-}
-
-a:hover {
-  color: rgb(183, 233, 204);
-}
-
-p {
-  margin-bottom: 1em;
-  color: black;
-  font-size: 15px;
-  font-weight: 300;
-}
+ body {
+   font-family: var(--body-typeface);
+   color: black;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+ }
 
 
 
-/* Work Page Layout */
+ /* Making all images responsive */
+ img {
+   max-width: 100%;
+   height: auto;
+ }
 
 
-.work-wrapper {
-  flex: 1;
-}
+ /* Typography */
 
-.portfolio {
-  padding: 1rem;
-}
+ h1 {
+   font-size: 4em;
+   font-family: var(--main-heading);
+   margin-bottom: .2em;
+   color: #6da0cb;
+ }
 
-/* Defining the work page grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  grid-gap: 1rem;
-  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
-}
+ h2 {
+   font-size: 1em;
+   font-family: var(--main-heading);
+   margin-bottom: .2em;
+   color: #cccccc;
+ }
 
+ h3 {
+   font-size: 1em;
+   font-family: var(--main-heading);
+   margin-bottom: .2em;
+   color: #000000;
+ }
 
-.hero-footer {
-  color: white;
-}
+ .hero-headline {
+   color: white;
+ }
 
-.main-footer {
-  min-height: 100vh;
-  background: #f5f5f5;
-}
+ /* Hyperlink Styles */
+ a {
+   text-decoration: none;
+   color: #84bdee;
 
-.hero-footer,
-.main-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1rem;
-  text-align: center;
-}
+ }
 
+ a:hover {
+   color: rgb(183, 233, 204);
+ }
 
-
-
-
-
-
-
-/* Hero */
-
-
-
-.branding-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1em;
-  align-items: center;
-}
-
-.logo {
-  width:4em;
-}
-
-.hero-headline-wrapper {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 4em 8em;
-  text-align: center;
-}
-
-.hero-headline {
-  font-size: 3em;
-  color: #6da0cb;
-}
-
-.footer-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1em;
-}
-
-/* Hero */
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-size: 600%;
-  background-image: var(--gradient);
-  animation: bg-animation 120s infinite alternate;
-}
+ p {
+   margin-bottom: 1em;
+   color: black;
+   font-size: 1.2rem;
+   line-height: 1.3;
+   font-weight: 300;
+ }
 
 
 
-
-.hero-headline-wrapper {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 4em 8em;
-  text-align: center;
-}
+ /* Work Page Layout */
 
 
+ .work-wrapper {
+   flex: 1;
+ }
 
-/* Project Page */
+ .portfolio {
+   padding: 1rem;
+ }
 
-.project-wrapper {
-  display: flex;
-  justify-content: space-between;
-  background: white;
-  padding: 1em;
-}
+ /* Defining the work page grid */
+ .grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+   grid-gap: 1rem;
+   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
+ }
 
-.project-aside {
-  width: 35vw;
-  height: 40vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5vh;
-  color: white;
-  background: rgb(255, 255, 255);
-  padding: 1em;
-}
 
-.project-navigation {
-  display: flex;
-  flex-direction: row;
-}
+ .hero-footer {
+   color: white;
+ }
 
-.arrow {
-  padding-right: 1em;
-}
+ .hero-footer,
+ .main-footer {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 1rem;
+   text-align: center;
+ }
 
-.project-details {
-  width: 60vw;
-  min-height: 800vh;
-  background: white;
-  padding: 1em;
-}
+ .main-footer {
+   width: 100%;
+   min-height: 100vh;
+   background: #f5f5f5;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   align-items: center;
+ }
+
+ .footer-column {
+   padding: 2rem 2rem 0 2rem;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+ }
+
+ .about {}
+
+ .copyright {
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+ }
+
+
+ /* Hero Styles */
+
+ .branding-navigation {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1em;
+   align-items: center;
+ }
+
+ .logo {
+   width: 4em;
+ }
+
+ .hero-headline-wrapper {
+   display: flex;
+   flex: 1;
+   align-items: center;
+   justify-content: center;
+   padding: 4em 8em;
+   text-align: center;
+ }
+
+ .hero-headline {
+   font-size: 3em;
+   color: #6da0cb;
+ }
+
+ .footer-navigation {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1em;
+ }
+
+ /* Hero */
+
+ .hero {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+ }
+
+
+
+
+ .hero-headline-wrapper {
+   display: flex;
+   flex: 1;
+   align-items: center;
+   justify-content: center;
+   padding: 4em 8em;
+   text-align: center;
+ }
+
+
+
+ /* Project Page */
+
+ .project-wrapper {
+   display: flex;
+   justify-content: space-between;
+   background: white;
+   padding: 1em;
+ }
+
+ .project-aside {
+   width: 35vw;
+   height: 40vh;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 5vh;
+   color: white;
+   background: rgb(255, 255, 255);
+   padding: 1em;
+ }
+
+ .project-navigation {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .arrow {
+   padding-right: 1em;
+ }
+
+ .project-details {
+   width: 60vw;
+   min-height: 800vh;
+   background: white;
+   padding: 1em;
+ }
+
+ /* Individual Project Page spacing */
+
+ .project-1-image-2 {
+   min-height: 90vh;
+   display: flex;
+   align-items: center;
+ }
+
+ /* Adjustments for large screens */
+ @media (min-width: 992px) {
+
+   .main-footer {
+     flex-direction: row;
+   }
+
+   .footer-column {
+     width: 50%;
+   }
+
+ }
